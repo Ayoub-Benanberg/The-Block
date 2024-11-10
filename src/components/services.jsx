@@ -34,7 +34,7 @@ export default function Services() {
 
                 {/* Second Row of Service Cards */}
                 <div className="flex flex-wrap justify-evenly py-8">
-                    <div className="w-full sm:w-1/2 md:w-[15%] bg-blue-800 text-white p-6 text-center mb-8">
+                    <div className="w-full sm:w-1/2 md:w-[15%] bg-blue-800 text-white p-6 text-center md:mb-0 mb-8">
                         <div className="flex justify-center">
                             <img src="icons/Repair-Services.png" alt="Repair Services" className="py-4" />
                         </div>
@@ -42,7 +42,7 @@ export default function Services() {
                         <span className="py-3">Repair Services</span>
                     </div>
 
-                    <div className="w-full sm:w-1/2 md:w-[15%] bg-white p-6 text-center mb-8">
+                    <div className="w-full sm:w-1/2 md:w-[15%] bg-white p-6 text-center md:mb-0 mb-8">
                         <div className="flex justify-center">
                             <img src="icons/Architecture.png" alt="Architecture" className="py-4" />
                         </div>
@@ -50,7 +50,7 @@ export default function Services() {
                         <span className="py-3 text-blue-700">Architecture</span>
                     </div>
 
-                    <div className="w-full sm:w-1/2 md:w-[15%] bg-blue-800 text-white p-6 text-center mb-8">
+                    <div className="w-full sm:w-1/2 md:w-[15%] bg-blue-800 text-white p-6 text-center md:mb-0 mb-8">
                         <div className="flex justify-center">
                             <img src="icons/Electric.png" alt="Electric" className="py-4" />
                         </div>

@@ -3,6 +3,8 @@ import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 import Reputation from "./components/reputation";
 import Services from "./components/services";
+import Stats from "./components/stats";
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Reputation/>
       <AboutUs/>
       <Services/>
+      <Stats />
     </div>
   );
 }
