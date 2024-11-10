@@ -15,11 +15,11 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-12 font-semibold text-base">
+                <div className="hidden md:flex space-x-8 font-semibold text-base">
                     <a href="#" className="">Home</a>
                     <a href="#about" className="">About Us</a>
                     <a href="#" className="">Projects</a>
-                    <a href="#" className="">Services</a>
+                    <a href="#services" className="">Services</a>
                     <a href="#" className="text-orange-400">Contact Us</a>
                 </div>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <a href="#" className="block py-2">Home</a>
                 <a href="#about" className="block py-2">About Us</a>
                 <a href="#" className="block py-2">Projects</a>
-                <a href="#" className="block py-2">Services</a>
+                <a href="#services" className="block py-2">Services</a>
                 <a href="#" className="block py-2 text-orange-400">Contact Us</a>
             </div>
         </nav>
