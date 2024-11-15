@@ -61,7 +61,7 @@ export default function Stats() {
         {/* Statistics Section */}
         <div className="flex flex-wrap gap-8 lg:max-w-3xl md:order-1 order-2">
           {stats.map((stat) => (
-            <div key={stat.id} className="flex gap-x-4 p-4 bg-gray-50 rounded-lg shadow-lg items-start w-full sm:w-auto">
+            <div key={stat.id} className="flex gap-x-4 p-4 bg-white rounded-lg shadow-lg items-start w-full sm:w-auto">
               <img src={stat.iconSrc} alt={stat.name} className="w-12 h-12" />
               <div>
                 <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
@@ -75,13 +75,13 @@ export default function Stats() {
 
         {/* Information Section */}
         <div className='md:order-2 order-1'>
-          <h2 className="text-4xl font-bold text-blue-800">30 Years Experience</h2>
-          <p className="mt-4 text-gray-600 text-lg max-w-md">
+          <h2 className="ml-5 text-4xl font-bold text-blue-800">30 Years Experience</h2>
+          <p className="ml-5 mt-4 text-gray-600 text-lg max-w-md">
             Our company has been the leading provider of construction services to clients throughout the USA since 1988.
           </p>
-          <button className="my-6 px-6 py-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-700">
+          <button className="my-10 px-7 py-2.5 bg-blue-800 text-white font-semibold rounded-sm hover:bg-blue-600 ">
             Contact Us
-          </button>
+          </button> 
         </div>
       </div>
     </div>
