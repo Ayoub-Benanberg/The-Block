@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import projects from '../data/projects';
+import ProjectCard from './projectCard';
 
 export default function Projects() {
     const [filter, setFilter] = useState('all');
@@ -43,10 +44,8 @@ export default function Projects() {
         <div className="w-full flex flex-col lg:flex-row p-6 gap-6">
 
             {/* Filter Section */}
-
             <div className="w-full lg:w-1/3">
-                <h2 className="text-3xl font-bold mb-6">Projects</h2>
-
+                <h2 className="text-3xl font-bold mb-6" id="projects">Projects</h2>
                 <div className="flex flex-col gap-4 font-bold text-gray-300">
                     {['all', 'commercial', 'residential', 'other'].map((category) => (
                         <button
@@ -70,26 +69,12 @@ export default function Projects() {
             <div className="w-full lg:w-2/3 mt-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-[30%] gap-6">
                     {paginatedProjects.map((project) => (
-                        <div
-                            key={project.id}
-                            className="border overflow-hidden shadow hover:shadow-lg "
-                        >
-                            <img
-                                src={project.imgSrc}
-                                alt={project.name}
-                                className="w-full h-40 object-cover"
-                            />
-                            <div className="px-4 p-2 bg-blue-800 text-white">
-                                <h3 className="text-base font-semibold">{project.name}</h3>
-                                <p className="text-sm font-light">{project.adresse}</p>
-                            </div>
-                        </div>
+                        <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
 
                 {/* Pagination Controls */}
                 <div className="flex items-center justify-between mt-6">
-                    {/* Back Button */}
                     <button
                         className={`p-2 w-1/4 text-white bg-slate-800 ${currentPage === 0 ? 'cursor-not-allowed' : ''
                             }`}
@@ -98,8 +83,6 @@ export default function Projects() {
                     >
                         ← Back
                     </button>
-
-                    {/* Pagination Dots */}
                     <div className="flex gap-2">
                         {Array.from({ length: totalPages }, (_, index) => (
                             <span
@@ -109,18 +92,17 @@ export default function Projects() {
                             ></span>
                         ))}
                     </div>
-
-                    {/* Next Button */}
                     <button
                         className={`p-2 w-1/4 text-white bg-slate-800 ${currentPage === totalPages - 1 ? 'cursor-not-allowed' : ''
                             }`}
                         onClick={handleNext}
                         disabled={currentPage === totalPages - 1}
                     >
-                        Next → 
+                        Next →
                     </button>
                 </div>
             </div>
         </div>
     );
 }
+
