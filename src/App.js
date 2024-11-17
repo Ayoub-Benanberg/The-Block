@@ -1,5 +1,6 @@
 import AboutUs from "./components/about";
 import Ad from "./components/ads";
+import ContactForm from "./components/contact";
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 import Projects from "./components/projects";
@@ -19,6 +20,7 @@ function App() {
       <Stats/>
       <Ad/>
       <Projects/>
+      <ContactForm/>
     </div>
   );
 }
