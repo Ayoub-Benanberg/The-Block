@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className="bg-white p-4" id="home">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 {/* Logo */}
-                <div className="text-xl font-bold flex items-center">
+                <div className="text-xl font-extrabold flex items-center">
                     <img src="icons/block-icon.png" alt="logo" className="w-10 absolute" />
                     <span className="text-blue-600">The Block</span>
                 </div>

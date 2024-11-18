@@ -31,7 +31,7 @@ export default function Hero() {
             </div>
 
             {/* up button */}
-            <a href="#home" className="p-4 bg-orange-400 text-white fixed z-10 right-0 bottom-0 m-10 rounded-full">up</a>
+            <a href="#home" className="p-3 px-5 bg-blue-900 text-white fixed z-10 right-0 bottom-0 m-10 rounded-full">↑</a>
 
 
         </div>
